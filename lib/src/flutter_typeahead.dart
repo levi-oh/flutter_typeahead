@@ -1426,7 +1426,7 @@ class _SuggestionsListState<T> extends State<_SuggestionsList<T>>
           focusColor: Theme.of(context).hoverColor,
           focusNode: focusNode,
           child: widget.itemBuilder!(context, suggestion),
-          onTap: () {
+          onTapDown: (detail) {
             // * we give the focus back to the text field
             widget.giveTextFieldFocus();
 
